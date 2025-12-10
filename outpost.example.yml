@@ -1,0 +1,26 @@
+watch:
+  root_dir: .
+  projects:
+    # Example with auto-exec: changes trigger automatic builds
+    - name: example1
+      path: ./examples/test_project_1
+      auto_exec: false
+      tasks:
+        - name: build
+          command: echo "🔨 Auto-building..." && sleep 1 && echo "✅ Build complete!"
+          workdir: ./examples/test_project_1
+        - name: notify
+          command: echo "📢 Changes detected and processed!"
+          workdir: ./examples/test_project_1
+    
+    # Example with manual execution: shows interactive menu
+    - name: example2
+      path: ./examples/test_project_2
+      auto_exec: false
+      tasks:
+        - name: test
+          command: echo "🧪 Running tests..." && sleep 1 && echo "✅ Tests passed!"
+          workdir: ./examples/test_project_2
+        - name: deploy
+          command: echo "🚀 Deploying..." && sleep 1 && echo "✅ Deployed!"
+          workdir: ./examples/test_project_2

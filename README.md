@@ -78,4 +78,3 @@ Start monitoring:
 Use `auto_exec: true` to automatically excecute tasks on changes.
 
 If you use manual mode and new changes are detected, refresh the menu by pressing CTRL+C once (pressing CTRL+C quickly twice will shut down Outpost.)
-# outpost

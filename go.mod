@@ -1,4 +1,4 @@
-module outpost
+module github.com/phasi/outpost
 
 go 1.21
 
